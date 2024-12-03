@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>competitions - CodeArena</title>
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/public/css/navbar.css">
+    <link rel="stylesheet" href="/public/css/home.css">
+   
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-brand">
+            <i data-feather="code-2"></i>
+             <span>CodeArena</span>
+        </div>
+        <div class="nav-links">
+            <a href="/public/index.html" class="nav-link active">
+                <i data-feather="home"></i>
+                Home
+            </a>
+            <a href="/public/problems.html" class="nav-link">
+                <i data-feather="code"></i>
+                Problems
+            </a>
+            <a href="/public/competition.html" class="nav-link ">
+                <i data-feather="trophy"></i>
+                Competitions
+            </a>
+            <a href="/public/leadership.html" class="nav-link">
+                <i data-feather="users"></i>
+                Leaderboard
+            </a>
+        </div>
+        <div class="nav-auth">
+            <button id="loginBtn" class="btn btn-outline">Login</button>
+            <button id="signupBtn" class="btn btn-primary">Sign Up</button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Master Your Coding Skills</h1>
+                <p>Practice coding, compete in challenges, and join a community of developers</p>
+                <a href="/problems.html" class="btn btn-primary btn-large">Start Coding Now</a>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <i data-feather="code"></i>
+                <h3>Practice Problems</h3>
+                <p>Solve coding challenges across different difficulty levels and topics</p>
+                <a href="/public/problems.html" class="feature-link">Browse Problems</a>
+            </div>
+            <div class="feature-card">
+                <i data-feather="trophy"></i>
+                <h3>Competitions</h3>
+                <p>Participate in coding contests and compete with developers worldwide</p>
+                <a href="/public/competition.html" class="feature-link">View Competitions</a>
+            </div>
+            <div class="feature-card">
+                <i data-feather="users"></i>
+                <h3>Leaderboard</h3>
+                <p>Track your progress and compare your performance with others</p>
+                <a href="/public/leadership.html" class="feature-link">Check Rankings</a>
+            </div>
+        </section>
+    </main>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <h2>Sign Up</h2>
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="signupUsername">Username</label>
+                    <input type="text" id="signupUsername" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupEmail">Email</label>
+                    <input type="email" id="signupEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        feather.replace();
+    </script>
+    <script type="module" src="/js/main.js"></script>
+    <script type="module" src="/js/auth.js"></script>
+</body>
+</html>

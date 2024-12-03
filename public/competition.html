@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>competitions - CodeArena</title>
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/public/css/navbar.css">
+    <link rel="stylesheet" href="/public/css/home.css">
+    <link rel="stylesheet" href="/public/css/competition.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-brand">
+            <i data-feather="code-2"></i>
+             <span>CodeArena</span>
+        </div>
+        <div class="nav-links">
+            <a href="/public/index.html" class="nav-link">
+                <i data-feather="home"></i>
+                Home
+            </a>
+            <a href="/public/problems.html" class="nav-link">
+                <i data-feather="code"></i>
+                Problems
+            </a>
+            <a href="/public/competition.html" class="nav-link active">
+                <i data-feather="trophy"></i>
+                Competitions
+            </a>
+            <a href="/public/leadership.html" class="nav-link">
+                <i data-feather="users"></i>
+                Leaderboard
+            </a>
+        </div>
+        <div class="nav-auth">
+            <button id="loginBtn" class="btn btn-outline">Login</button>
+            <button id="signupBtn" class="btn btn-primary">Sign Up</button>
+        </div>
+    </nav>
+
+    <div class="competition-container">
+        <h1>Upcoming Competitions & Hackathons</h1>
+
+        <div class="competition-grid">
+            <!-- Competition Card 1 -->
+            <div class="competition-card">
+                <div class="competition-banner">
+                    <span class="competition-status">Active</span>
+                </div>
+                <h2>Web Innovation Challenge 2024</h2>
+                <p class="competition-date"><i data-feather="calendar"></i> Mar 15 - Apr 15, 2024</p>
+                <p class="competition-participants"><i data-feather="users"></i> 128 participants</p>
+                <p class="competition-description">Build innovative web applications that solve real-world problems.</p>
+                <div class="prize-pool">
+                    <h3>Prize Pool</h3>
+                    <p>$5,000</p>
+                </div>
+                <button class="join-btn">Join Competition</button>
+            </div>
+
+            <!-- Competition Card 2 -->
+            <div class="competition-card">
+                <div class="competition-banner">
+                    <span class="competition-status">Upcoming</span>
+                </div>
+                <h2>AI Hackathon 2024</h2>
+                <p class="competition-date"><i data-feather="calendar"></i> Apr 1 - Apr 30, 2024</p>
+                <p class="competition-participants"><i data-feather="users"></i> 64 participants</p>
+                <p class="competition-description">Create AI-powered solutions for tomorrow's challenges.</p>
+                <div class="prize-pool">
+                    <h3>Prize Pool</h3>
+                    <p>$10,000</p>
+                </div>
+                <button class="join-btn">Register Now</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
