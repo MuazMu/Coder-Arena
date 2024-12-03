@@ -74,6 +74,7 @@
 
     <div id="loginModal" class="modal">
         <div class="modal-content">
+            <span class="close-btn">&times;</span>
             <h2>Login</h2>
             <form id="loginForm">
                 <div class="form-group">
@@ -84,6 +85,7 @@
                     <label for="loginPassword">Password</label>
                     <input type="password" id="loginPassword" required>
                 </div>
+                <div class="form-message" id="loginMessage"></div>
                 <button type="submit" class="btn btn-primary">Login</button>
             </form>
         </div>
@@ -91,6 +93,7 @@
 
     <div id="signupModal" class="modal">
         <div class="modal-content">
+            <span class="close-btn">&times;</span>
             <h2>Sign Up</h2>
             <form id="signupForm">
                 <div class="form-group">
@@ -103,8 +106,9 @@
                 </div>
                 <div class="form-group">
                     <label for="signupPassword">Password</label>
-                    <input type="password" id="signupPassword" required>
+                    <input type="password" id="signupPassword" required minlength="6">
                 </div>
+                <div class="form-message" id="signupMessage"></div>
                 <button type="submit" class="btn btn-primary">Sign Up</button>
             </form>
         </div>
