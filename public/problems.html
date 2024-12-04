@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="/public/css/home.css">
     <link rel="stylesheet" href="/public/css/problems.css">
     <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.36.1/min/vs/loader.min.js"></script>
 </head>
 <body>
 
     <nav class="navbar">
         <div class="nav-brand">
             <i data-feather="code-2"></i>
-             <span>CodeArena</span>
+            <a href="/public/index.html">CodeArena</a>
         </div>
         <div class="nav-links">
             <a href="/public/index.html" class="nav-link">
@@ -126,6 +127,17 @@
 
     <script>
         feather.replace();
+        
+        // Initialize Monaco Editor
+        require.config({ paths: { vs: 'https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.36.1/min/vs' }});
+        require(['vs/editor/editor.main'], function() {
+            window.editor = monaco.editor.create(document.getElementById('editor'), {
+                value: '# Write your code here\n',
+                language: 'python',
+                theme: 'vs-dark',
+                automaticLayout: true
+            });
+        });
     </script>
     <script type="module" src="/js/main.js"></script>
     <script type="module" src="/js/auth.js"></script>

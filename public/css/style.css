@@ -21,6 +21,11 @@ body {
     background-color: var(--background-color);
 }
 
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
 .btn {
     display: inline-flex;
     align-items: center;
